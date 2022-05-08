@@ -1,3 +1,4 @@
+/*#region VARIABLES */
 :root {
   --main-backround-color: #fff;
   --secondary-backround-color: #f5f4fa;
@@ -14,11 +15,12 @@
   --transition-timing: 250ms;
   --transition-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+/*#endregion */
 
 body {
   background-color: var(--main-backround-color);
   color: var(--main-text-color);
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 400;
   font-size: 14px;
   letter-spacing: 0.03em;
@@ -79,7 +81,7 @@ body {
 /* Ссылки */
 .logo-link {
   color: var(--accent-color);
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
@@ -154,7 +156,7 @@ body {
 }
 
 .nav-link-current::after {
-  content: "";
+  content: '';
 
   position: absolute;
   left: 0;
@@ -222,12 +224,7 @@ body {
   margin-left: auto;
   margin-right: auto;
 
-  background-image: linear-gradient(
-      to right,
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
-    url("../images/hero-bg.jpg");
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/hero-bg.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: 1600px;
@@ -262,8 +259,7 @@ body {
   border-radius: 4px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
-  transition: background-color var(--transition-timing)
-    var(--transition-function);
+  transition: background-color var(--transition-timing) var(--transition-function);
 }
 
 .hero-button:hover,
@@ -282,8 +278,7 @@ body {
 
   background-color: rgba(0, 0, 0, 0.2);
 
-  transition: opacity var(--transition-timing) var(--transition-function),
-    visibility var(--transition-timing) var(--transition-function);
+  transition: opacity var(--transition-timing) var(--transition-function), visibility var(--transition-timing) var(--transition-function);
 }
 
 .modal-backdrop.is-hidden {
@@ -306,15 +301,13 @@ body {
   height: 581px;
 
   background-color: var(--main-backround-color);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 
   opacity: 1;
   transform: translate(-50%, -50%) scale(1);
 
-  transition: transform var(--transition-timing) var(--transition-function),
-    opacity var(--transition-timing) var(--transition-function);
+  transition: transform var(--transition-timing) var(--transition-function), opacity var(--transition-timing) var(--transition-function);
 }
 
 .close-button {
@@ -451,8 +444,7 @@ body {
 
   background-color: #fff;
 
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
 
@@ -505,8 +497,7 @@ body {
   color: var(--icon-first-color);
   border-radius: 50%;
 
-  transition: color var(--transition-timing) var(--transition-function),
-    background-color var(--transition-timing) var(--transition-function);
+  transition: color var(--transition-timing) var(--transition-function), background-color var(--transition-timing) var(--transition-function);
 }
 
 .team-social-link:hover,
@@ -545,8 +536,7 @@ body {
   border: 1px solid var(--icon-first-color);
   border-radius: 4px;
 
-  transition: color var(--transition-timing) var(--transition-function),
-    border-color var(--transition-timing) var(--transition-function);
+  transition: color var(--transition-timing) var(--transition-function), border-color var(--transition-timing) var(--transition-function);
 }
 
 .client-link:hover,
@@ -585,8 +575,7 @@ body {
   border-width: 0;
   border-radius: 4px;
 
-  transition: color var(--transition-timing) var(--transition-function),
-    background-color var(--transition-timing) var(--transition-function),
+  transition: color var(--transition-timing) var(--transition-function), background-color var(--transition-timing) var(--transition-function),
     box-shadow var(--transition-timing) var(--transition-function);
 }
 
@@ -596,8 +585,7 @@ body {
   color: #fff;
   background-color: var(--accent-color);
 
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .gallery-list {
@@ -625,8 +613,7 @@ body {
 
 .card-link:hover,
 .card-link:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .card-overlay-thumb {
@@ -753,8 +740,7 @@ body {
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
 
-  transition: background-color var(--transition-timing)
-    var(--transition-function);
+  transition: background-color var(--transition-timing) var(--transition-function);
 }
 
 .footer-social-link:hover,
