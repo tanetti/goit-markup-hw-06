@@ -457,7 +457,7 @@ body {
 
 .checkbox-icon-unchecked {
   position: absolute;
-  top: -1px;
+  top: 0;
   left: 0;
 
   width: 16px;
@@ -472,7 +472,7 @@ body {
 
 .checkbox-icon-checked {
   position: absolute;
-  top: -1px;
+  top: 0;
   left: 0;
 
   transform: scale(2);
