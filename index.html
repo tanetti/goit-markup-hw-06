@@ -107,13 +107,19 @@
               <textarea class="form-comments" name="comments" placeholder="Введите текст"></textarea>
             </label>
             <label class="form-checkbox">
-              <input class="checkbox" name="agreement" type="checkbox" />
+              <div class="checkbox-container">
+                <input class="checkbox" name="agreement" type="checkbox" />
+                <div class="checkbox-icon-unchecked"></div>
+                <svg class="checkbox-icon-checked" width="16px" height="15px">
+                  <use href="./images/icons.svg#check"></use>
+                </svg>
+              </div>
               <span class="checkbox-label">
                 Соглашаюсь с рассылкой и принимаю
                 <a class="checkbox-label-link" href="">Условия договора</a>
               </span>
             </label>
-            <button type="submit">Отправить</button>
+            <button class="form-button-submit" type="submit">Отправить</button>
           </form>
         </div>
       </div>
