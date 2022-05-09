@@ -497,8 +497,6 @@ body {
   transform: scale(2);
   opacity: 0;
 
-  outline: 2px solid transparent;
-
   transition: transform var(--transition-timing) var(--transition-function), opacity var(--transition-timing) var(--transition-function),
     outline-color var(--transition-timing) var(--transition-function);
 }
@@ -512,7 +510,7 @@ body {
   opacity: 1;
 }
 
-.checkbox:focus:not(:checked) + .checkbox-icon-unchecked {
+.checkbox:focus + .checkbox-icon-unchecked {
   outline-color: var(--accent-color);
 }
 
