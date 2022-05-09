@@ -1,4 +1,4 @@
-/*#region VARIABLES */
+/*#region ПЕРЕМЕННЫЕ */
 :root {
   --main-backround-color: #fff;
   --secondary-backround-color: #f5f4fa;
@@ -17,6 +17,7 @@
 }
 /*#endregion */
 
+/*#region ГЛОБАЛ */
 body {
   background-color: var(--main-backround-color);
   color: var(--main-text-color);
@@ -25,8 +26,9 @@ body {
   font-size: 14px;
   letter-spacing: 0.03em;
 }
+/*#endregion */
 
-/* Утилиты */
+/*#region УТИЛИТЫ */
 .list {
   list-style: none;
   padding: 0;
@@ -63,14 +65,14 @@ body {
 .paragraph {
   margin: 0;
 }
+/*#endregion */
 
-/* Общая секция */
+/*#region ОБЩИЕ */
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
 }
 
-/* Общий контейнер */
 .container {
   width: 1200px;
   padding-left: 15px;
@@ -78,7 +80,18 @@ body {
   margin: 0 auto;
 }
 
-/* Ссылки */
+.caption {
+  margin-bottom: 50px;
+
+  color: var(--caption-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+/*#endregion */
+
+/*#region ССЫЛКИ */
 .logo-link {
   color: var(--accent-color);
   font-family: 'Raleway', sans-serif;
@@ -168,8 +181,9 @@ body {
   background-color: var(--accent-color);
   border-radius: 2px;
 }
+/*#endregion */
 
-/* Хедер */
+/*#region ХЕДЕР */
 .header {
   position: fixed;
   top: 0;
@@ -216,8 +230,9 @@ body {
   margin-right: 10px;
   fill: currentColor;
 }
+/*#endregion */
 
-/* Герой */
+/*#region ГЕРОЙ */
 .hero {
   padding-top: 200px;
   padding-bottom: 200px;
@@ -291,7 +306,9 @@ body {
   opacity: 0;
   transform: translate(-50%, -50%) scale(1.5);
 }
+/*#endregion */
 
+/*#region МОДАЛЬНОЕ ОКНО */
 .modal {
   position: absolute;
   top: 50%;
@@ -511,8 +528,9 @@ body {
   color: var(--accent-color);
   text-decoration-line: underline;
 }
+/*#endregion */
 
-/* Особенности */
+/*#region ОСОБЕННОСТИ */
 .features {
   display: flex;
 }
@@ -551,19 +569,9 @@ body {
 .features-text {
   line-height: 1.71;
 }
+/*#endregion */
 
-/* Общий заголовок */
-.caption {
-  margin-bottom: 50px;
-
-  color: var(--caption-text-color);
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-}
-
-/* Чем мы занимаемся */
+/*#region ЧЕМ МЫ ЗАНИМАЕМСЯ */
 .work {
   padding-top: 0;
 }
@@ -600,8 +608,9 @@ body {
   color: #fff;
   background-color: rgba(47, 48, 58, 0.8);
 }
+/*#endregion */
 
-/* Команда */
+/*#region КОМАНДА */
 .team {
   background-color: var(--secondary-backround-color);
 }
@@ -680,8 +689,9 @@ body {
 .team-social-link-icon {
   fill: currentColor;
 }
+/*#endregion */
 
-/* Постоянные клиенты */
+/*#region ПОСТОЯННЫЕ КЛИЕНТЫ */
 .clients-list {
   display: flex;
 }
@@ -719,8 +729,9 @@ body {
 .client-icon {
   fill: currentColor;
 }
+/*#endregion */
 
-/* Галерея */
+/*#region ГАЛЕРЕЯ */
 .gallery-nav {
   display: flex;
   justify-content: center;
@@ -841,8 +852,9 @@ body {
   line-height: 1.88;
   text-decoration: none;
 }
+/*#endregion */
 
-/* Футер */
+/*#region ФУТЕР */
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -973,3 +985,4 @@ body {
 .footer-button-icon {
   margin-left: 10px;
 }
+/*#endregion */
