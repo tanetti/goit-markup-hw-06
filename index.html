@@ -66,6 +66,7 @@
         </div>
       </section>
 
+      <!-- Модальное окно -->
       <div class="modal-backdrop is-hidden" data-modal>
         <div class="modal">
           <button class="close-button" type="button" data-modal-close aria-label="Закрыть окно">
@@ -539,7 +540,7 @@
           </address>
         </div>
         <div class="footer-socials-container">
-          <b class="footer-socials-caption">присоединяйтесь</b>
+          <b class="footer-socials-caption">Присоединяйтесь</b>
           <ul class="footer-socials-list list">
             <li class="footer-socials-list-item">
               <a
@@ -598,6 +599,21 @@
               </a>
             </li>
           </ul>
+        </div>
+        <div class="footer-subscribe-container">
+          <b class="footer-subscribe-caption">Подпишитесь на рассылку</b>
+          <form class="subscribe-form" autocapitalize="off">
+            <label for="footer-email" class="hidden-caption">Почта</label>
+            <input class="subscribe-form-email" name="email" type="email" id="footer-email" placeholder="E-mail" />
+            <button class="hero-button" type="submit">
+              <span class="footer-button-content">
+                Подписаться
+                <svg class="footer-button-icon" width="24" height="24">
+                  <use href="./images/icons.svg#send"></use>
+                </svg>
+              </span>
+            </button>
+          </form>
         </div>
       </div>
     </footer>
