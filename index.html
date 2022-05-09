@@ -79,7 +79,7 @@
             <label class="form-field">
               <span class="form-label">Имя</span>
               <div class="form-input-container">
-                <input class="form-input" name="name" type="text" />
+                <input class="form-input" name="name" type="text" minlength="1" />
                 <svg class="form-input-icon" width="18px" height="18px">
                   <use href="./images/icons.svg#person"></use>
                 </svg>
@@ -88,7 +88,7 @@
             <label class="form-field">
               <span class="form-label">Телефон</span>
               <div class="form-input-container">
-                <input class="form-input" name="phone" type="tel" />
+                <input class="form-input" name="phone" type="tel" minlength="7" />
                 <svg class="form-input-icon" width="18px" height="18px">
                   <use href="./images/icons.svg#phone"></use>
                 </svg>
@@ -97,7 +97,7 @@
             <label class="form-field">
               <span class="form-label">Почта</span>
               <div class="form-input-container">
-                <input class="form-input" name="email" type="email" />
+                <input class="form-input" name="email" type="email" minlength="5" />
                 <svg class="form-input-icon" width="18px" height="18px">
                   <use href="./images/icons.svg#email"></use>
                 </svg>
@@ -604,7 +604,7 @@
           <b class="footer-subscribe-caption">Подпишитесь на рассылку</b>
           <form class="subscribe-form" autocapitalize="off">
             <label for="footer-email" class="hidden-caption">Почта</label>
-            <input class="subscribe-form-email" name="email" type="email" id="footer-email" placeholder="E-mail" />
+            <input class="subscribe-form-email" name="email" type="email" id="footer-email" minlength="5" placeholder="E-mail" />
             <button class="hero-button" type="submit">
               <span class="footer-button-content">
                 Подписаться

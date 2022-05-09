@@ -951,6 +951,13 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  transition: border-color var(--transition-timing) var(--transition-function);
+}
+
+.subscribe-form-email:focus {
+  outline: 0;
+  border-color: #fff;
 }
 
 .subscribe-form-email::placeholder {
