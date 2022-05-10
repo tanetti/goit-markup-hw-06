@@ -406,6 +406,8 @@ body {
 
 .form-input-container {
   position: relative;
+
+  display: block;
 }
 
 .form-input {
@@ -470,6 +472,7 @@ body {
 .checkbox-container {
   position: relative;
 
+  display: block;
   width: 16px;
   height: 15px;
   margin-right: 8px;
@@ -496,6 +499,7 @@ body {
   top: 0;
   left: 0;
 
+  display: block;
   width: 16px;
   height: 15px;
 
@@ -540,6 +544,7 @@ body {
 .checkbox-label {
   line-height: 1.71;
   cursor: pointer;
+  user-select: none;
 }
 
 .checkbox-label-link {
