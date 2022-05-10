@@ -887,6 +887,7 @@ body {
 
 .footer-container {
   display: flex;
+  align-items: baseline;
 }
 
 .footer-address-container {
@@ -909,7 +910,6 @@ body {
 
 .footer-socials-container {
   width: 206px;
-  margin-top: 12px;
 }
 
 .footer-socials-caption {
@@ -959,7 +959,6 @@ body {
 }
 
 .footer-subscribe-container {
-  margin-top: 12px;
   margin-left: auto;
 }
 
@@ -970,6 +969,10 @@ body {
   color: #fff;
   line-height: 1.14;
   text-transform: uppercase;
+}
+
+.subscribe-form {
+  display: flex;
 }
 
 .subscribe-form-email {
