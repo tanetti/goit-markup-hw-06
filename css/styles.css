@@ -451,6 +451,11 @@ body {
   transition: border-color var(--transition-timing) var(--transition-function);
 }
 
+.form-input:hover,
+.form-comments:hover {
+  border-color: var(--accent-color);
+}
+
 .form-comments::placeholder {
   color: rgba(117, 117, 117, 0.5);
 }
@@ -472,6 +477,20 @@ body {
   cursor: pointer;
 }
 
+.checkbox-icon-checked {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 16px;
+  height: 15px;
+
+  transform: scale(0.2);
+  opacity: 0;
+
+  transition: transform var(--transition-timing) var(--transition-function), opacity var(--transition-timing) var(--transition-function);
+}
+
 .checkbox-icon-unchecked {
   position: absolute;
   top: 0;
@@ -480,42 +499,29 @@ body {
   width: 16px;
   height: 15px;
 
-  background-color: #fff;
   border: 2px solid var(--caption-text-color);
   border-radius: 2px;
 
-  outline: 2px solid transparent;
-
-  transition: border-color var(--transition-timing) var(--transition-function), outline-color var(--transition-timing) var(--transition-function);
+  transition: border-color var(--transition-timing) var(--transition-function), border-color var(--transition-timing) var(--transition-function);
 }
 
-.checkbox-icon-checked {
-  position: absolute;
-  top: 0;
-  left: 0;
-
-  transform: scale(2);
-  opacity: 0;
-
-  transition: transform var(--transition-timing) var(--transition-function), opacity var(--transition-timing) var(--transition-function),
-    outline-color var(--transition-timing) var(--transition-function);
-}
-
-.checkbox:checked + .checkbox-icon-unchecked {
-  border-color: var(--accent-color);
-}
-
-.checkbox:checked ~ .checkbox-icon-checked {
+.checkbox:checked + .checkbox-icon-checked {
   transform: scale(1);
   opacity: 1;
 }
 
-.checkbox:focus + .checkbox-icon-unchecked {
-  outline-color: var(--accent-color);
+.checkbox:checked ~ .checkbox-icon-unchecked {
+  border-color: var(--accent-color);
 }
 
-.checkbox:focus:checked + .checkbox-icon-unchecked {
-  outline-color: var(--caption-text-color);
+.checkbox:focus ~ .checkbox-icon-unchecked,
+.checkbox:hover ~ .checkbox-icon-unchecked {
+  border-color: var(--accent-color);
+}
+
+.checkbox:focus:checked ~ .checkbox-icon-unchecked,
+.checkbox:hover:checked ~ .checkbox-icon-unchecked {
+  border-color: var(--caption-text-color);
 }
 
 .checkbox {
@@ -533,6 +539,7 @@ body {
 
 .checkbox-label {
   line-height: 1.71;
+  cursor: pointer;
 }
 
 .checkbox-label-link {
@@ -978,7 +985,8 @@ body {
   transition: border-color var(--transition-timing) var(--transition-function);
 }
 
-.subscribe-form-email:focus {
+.subscribe-form-email:focus,
+.subscribe-form-email:hover {
   outline: 0;
   border-color: #fff;
 }
